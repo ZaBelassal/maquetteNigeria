@@ -1,0 +1,291 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: #212121;
+}
+nav {
+    /* position:fixed; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height:80px;
+    padding:0px 40px;
+}
+.menu {
+    margin:0;
+}
+.letterZ0,.letterZ1{
+    font-family: 'Updock', cursive;
+    position:relative;
+    font-size:3.7em;
+    color:#E1E1E1;
+    
+}
+li {
+display:inline-block;
+padding:0px 30px;
+font-size:1.1em;
+}
+a {
+    text-decoration: none;
+    color:#E1E1E1;
+}
+.letterZ{
+    width:100px;
+
+}
+.letterZ0{
+    top:26px;
+    left:38px;
+}
+.letterZ1{
+    top:-48px;
+    left:45px;
+}
+.case-studies{
+    height:30px;
+    background-color:#00ffbb;
+    padding-top:16px;
+    padding-bottom: 10px;
+    border-radius:30px;
+    font-size:1.1em;
+}
+
+/* home Section*/
+
+.home-section{
+    display:flex;
+    justify-content: space-around;
+    padding:40px 200px ;
+}
+
+h3{
+    color:white;
+}
+
+.job{
+    color:#00ffbb;
+    font-size:1.4em;
+    margin:20px 0px;
+}
+.first-name, .last-name{
+    font-size:5em;
+    color:white
+}
+.home-introduction p{
+    margin-top:20px;
+    color:white
+}
+.hire{
+    background-color:#00ffbb;
+    text-align:center;
+    padding:20px;
+    height:20px;
+    width:160px;
+    border-radius:30px;
+    color:black;
+}
+
+.Me img {
+    width:100%;
+    height:500px;
+
+}
+
+
+/* About Section */
+
+main {
+    background-color:#262626;
+}
+.about-section{
+    padding-top:10px;
+    padding-bottom:40px;
+}
+.explicit-flex{
+    display:flex;
+    padding:50px;
+    justify-content:space-between;
+}
+
+.pointiers{
+    position:relative;
+}
+.pointiers-absolute{
+    position:absolute;
+    top:50px;
+}
+.explicit-introduction-border{
+    position:relative;
+    border-top:8px solid #00ffbb;
+    border-left:8px solid #00ffbb;
+    margin-left:100px;
+    height:300px;
+    width:40%;
+    padding-top:10px;
+    padding-left:10px;
+}
+.explicit-introduction{
+    position:absolute;
+}
+.explicit-introduction img{
+    width:105%;
+    height:120%;
+}
+.about{
+    width:45%;
+    color:white
+}
+.about-who-flex{
+    display:flex;
+}
+.about-who {
+    color:#00ffbb;
+}
+.about-who-line{
+    display: inline-block;
+    background-color:#00ffbb;
+    width:70px;
+    height:4px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.downloadcv{
+    padding:20px;
+    background-color: #00ffbb;
+    text-align:center;
+    width:150px;
+    color:black;
+    border-radius:30px;
+}
+.about-who-flex{
+    text-align:center;
+}
+.services-section{
+    color:white;
+    padding-bottom:100px;
+}
+.services-who{
+    color:#00ffbb;
+}
+.services-who-flex{
+    display:flex;
+    justify-content: center;
+}
+.services-who-line{
+    display: inline-block;
+    background-color:#00ffbb;
+    width:70px;
+    height:4px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.myservices-title{
+
+    text-align:center;
+    margin-bottom:40px;
+    color:white;
+}
+
+.services-branch{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.item{
+    width:25%;
+    box-shadow: rgba(172, 172, 172, 0.2) 0px 2px 8px 0px;
+    padding:10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.item-branch{
+    font-size: 1.5em;
+}
+.item:nth-child(1){
+    border-bottom:10px solid #00AEFF;
+}
+.item:nth-child(2){
+    border-bottom: 10px solid #E31F71;
+}
+.item:nth-child(3){
+    border-bottom: 10px solid #8838B4;
+}
+
+.item:nth-child(1):hover{
+    background-color: #00ffbb;
+    color:#212121;
+}
+.item:nth-child(2):hover{
+    background-color: #00ffbb;
+    color:#212121;
+}
+.item:nth-child(3):hover{
+    background-color: #00ffbb;
+    color:#212121;
+}
+.item:nth-child(2) img{
+    width:80px;
+    height:80px;
+}
+.image-react1, .image-react2,.image-react3{
+    padding:20px;
+    border-radius:50%;
+    width:80px;
+}
+.image-react1{
+    background-color: #79d0fc70;   
+}
+.image-react2{
+    background-color: #e679fc70;
+}
+.image-react3{
+    background-color: #4d2b5f70;
+}
+
+
+
+
+/*services 1 */
+.services-explicit{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pointiers1-absolute{
+    position:absolute;
+    top:-80px;
+    right:0px;
+}
+
+.myworkprocess-flex{
+    display:flex;
+    justify-content: space-around;
+    padding-left:60px;
+    padding-right:60px;
+}
+.item-process{
+    color:white;
+    padding:20px;
+    box-sizing: border-box;
+    width:15%;
+    height:200px;
+    box-shadow: rgba(226, 226, 226, 0.16) 0px 1px 4px;
+    border-radius:5%;
+}
+.item-process-title{
+    font-size:1.5em;
+}
+
+.item-process:hover{
+    color:black;
+    background-color:#00ffbb;
+}
