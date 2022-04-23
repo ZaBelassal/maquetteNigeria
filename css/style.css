@@ -289,3 +289,88 @@ main {
     color:black;
     background-color:#00ffbb;
 }
+.portfolio-section{
+    height:900px;
+}
+.portfolio1-flex{
+    display:flex;
+    justify-content: center;
+    padding:40px;
+    
+}
+.desktop-relative{
+    position:relative;
+    background-image:url("../images/desktop1.PNG");
+    background-size: cover;
+    width:300px;
+    height:500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-sizing: border-box;
+    border-radius:10px;
+}
+.fishandchips-relative{
+
+    background-image:url("../images/fishandchips.PNG");
+    background-size: cover;
+    width:300px;
+    height:500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-sizing: border-box;
+    border-radius:10px;
+}
+.challengeMaquette-relative{
+    background-image:url("../images/challengeMaquette.PNG");
+    background-size: cover;
+    width:300px;
+    height:500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-sizing: border-box;
+    border-radius:10px;
+    margin:0px 20px;
+}
+.challengeMaquette{
+    margin:0px 33px;
+}
+
+.desktop-absolute{
+    position:absolute;
+    right:0;
+    margin-right:0px;
+    height:0px;
+    width:0px;
+    border-left: 100px solid transparent;
+    border-top: 165px solid #a446c1 ;
+}
+
+.desktop-card{
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-color:green;
+    height:500px;
+    width:300px;
+    border-radius:10px;
+}
+
+.desktop-card-verso{
+    position:absolute;
+    text-align:center;
+    top:80px;
+    padding:40px;
+    left:0px;
+}
+.view-design-gradient{
+    background-image: linear-gradient(to right,#3764A5, #904CBB);
+    text-align:center;
+    height:50px;
+    width:200px;
+    box-sizing: border-box;
+    padding:14px;
+    border-radius:30px;
+}
+.desktop-absolute-bottom{
+    position:absolute;
+    width:0px;
+    height:0px;
+    border-top
+}
