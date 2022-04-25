@@ -30,14 +30,13 @@ nav {
     color:#E1E1E1;
     
 }
-.menu li a:focus{
-    color:#00ffbb;
+
+.active{
+    color:#0DCB9B !important;
     font-weight: 700;
 }
-.menu li a:active{
-    color:#00ffbb;
-    font-weight: 700;
-}
+
+
 li {
 display:inline-block;
 padding:0px 30px;
