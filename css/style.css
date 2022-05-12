@@ -425,7 +425,7 @@ main {
         height: 70%;
         background: #2868A1;
         position: absolute;
-        opacity: 0.7;
+        opacity: 1;
         clip-path: polygon(0 0, var(--slant-angle) 0, 100% 100%, calc(100% - var(--slant-angle)) 100%);
         transition: 0.5s ease-in;
       }
