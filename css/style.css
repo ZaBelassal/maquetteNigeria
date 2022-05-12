@@ -327,6 +327,12 @@ main {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     box-sizing: border-box;
     border-radius:10px;
+    overflow:hidden;
+    display:block;
+    /* Addition */
+    --slant-angle:40%; /* How angled the moving elements are */
+  --offset: 20%; /* How far into the parent element they go */
+  --width-factor: 2; /* Their width is parents width multiplied by this number */
 }
 .fishandchips-relative{
     position:relative;
@@ -337,6 +343,12 @@ main {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     box-sizing: border-box;
     border-radius:10px;
+    overflow:hidden;
+    display:block;
+    /* Addition */
+    --slant-angle:40%; /* How angled the moving elements are */
+  --offset: 20%; /* How far into the parent element they go */
+  --width-factor: 2; /* Their width is parents width multiplied by this number */
 }
 
 .containerAbso{
@@ -413,39 +425,44 @@ main {
     border-radius:10px;
     margin:0px 20px;
     position:relative;
+    overflow:hidden;
+    display:block;
     /* Addition */
-    --slant-angle:70%; /* How angled the moving elements are */
+    --slant-angle:40%; /* How angled the moving elements are */
   --offset: 20%; /* How far into the parent element they go */
   --width-factor: 2; /* Their width is parents width multiplied by this number */
 }
 
-    .challengeMaquette-relative::after, .challengeMaquette-relative::before {
-        content: '';
-        width: calc(var(--width-factor) * 100%);
-        height: 70%;
-        background: #2868A1;
-        position: absolute;
-        opacity: 1;
-        clip-path: polygon(0 0, var(--slant-angle) 0, 100% 100%, calc(100% - var(--slant-angle)) 100%);
-        transition: 0.5s ease-in;
-      }
-      
-      .challengeMaquette-relative::after {
-        background-color: #904CBB;
-        transform: translateX(calc(100% / var(--width-factor) - var(--offset)));
-      }
-      
-      .challengeMaquette-relative::before {
-        transform: translateX(calc((100% - var(--offset)) * -1));
-      }
-      
-      .challengeMaquette-relative:hover::after {
-        transform: translateX(calc((100% - var(--offset)) * -1));
-      }
-      
-      .challengeMaquette-relative:hover::before {
-        transform: translateX(calc(100% / var(--width-factor) - var(--offset)));
-      }
+  
+  .challengeMaquette-relative::after, .challengeMaquette-relative::before,
+  .desktop-relative::after,.desktop-relative::before,
+  .fishandchips-relative::after,.fishandchips-relative::before{
+    content:'';
+    width: calc(var(--width-factor) * 100%);
+    height: 100%;
+    background: #3764A5;
+    position: absolute;
+    opacity: 1;
+    clip-path: polygon(0 0, var(--slant-angle) 0, 100% 100%, calc(100% - var(--slant-angle)) 100%);
+    transition: 0.4s ease-in;
+  }
+  
+  .challengeMaquette-relative::after,.desktop-relative::after,.fishandchips-relative::after {
+    background-color: #904CBB;
+    transform: translateX(calc(100% / var(--width-factor) - var(--offset)));
+  }
+  
+  .challengeMaquette-relative::before,.desktop-relative::before,.fishandchips-relative::before {
+    transform: translateX(calc((100% - var(--offset)) * -1));
+  }
+  
+  .challengeMaquette-relative:hover::after,.desktop-relative:hover::after,.fishandchips-relative:hover:after {
+    transform: translateX(calc((100% - var(--offset)) * -1));
+  }
+  
+  .challengeMaquette-relative:hover::before,.desktop-relative:hover::before,.fishandchips-relative:hover::before {
+    transform: translateX(calc(100% / var(--width-factor) - var(--offset)));
+  }
 
 
 .challengeMaquette{
@@ -493,8 +510,9 @@ main {
     width:200px;
     box-sizing: border-box;
     padding:14px;
+    margin-left:50px;
     border-radius:30px;
-    margin-top:40px;
+    margin-top:100px;
 }
 .desktop-absolute-bottom{
     position:absolute;
